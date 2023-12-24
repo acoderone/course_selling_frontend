@@ -9,7 +9,7 @@ function Courses() {
     const token = localStorage.getItem('token');
     const fetchCourses = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/users/courses', {
+        const response = await axios.get('https://course-selling-app-backend.onrender.com/users/courses', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -29,7 +29,7 @@ function Courses() {
     const token=localStorage.getItem('token');
    
     try{
-      const response=await axios.post(`http://localhost:8000/users/courses/${courseId}`,{},{
+      const response=await axios.post(`https://course-selling-app-backend.onrender.com/users/courses/${courseId}`,{},{
          headers:{
           Authorization:`Bearer ${token}`,
          },

@@ -15,7 +15,7 @@ function EditCourse() {
     const fetchCourseData = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get(`http://localhost:8000/admin/courses/${courseId}`, {
+        const response = await axios.get(`https://course-selling-app-backend.onrender.com/admin/courses/${courseId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -42,7 +42,7 @@ function EditCourse() {
       const token = localStorage.getItem('token');
       
       await axios.put(
-        `http://localhost:8000/admin/courses/${courseId}`,
+        `https://course-selling-app-backend.onrender.com/admin/courses/${courseId}`,
         { title, price, description, imageLink }, // Updated variable name
         {
           headers: {

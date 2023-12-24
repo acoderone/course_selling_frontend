@@ -23,7 +23,7 @@ const handleClick2=()=>{
   const handleSignup=async(e)=>{
   e.preventDefault();
   try{
-   const response= await axios.post('http://localhost:8000/admin/signup',{username,password})
+   const response= await axios.post('https://course-selling-app-backend.onrender.com/admin/signup',{username,password})
    if(response.status===200){
     alert("Signup successful");
     navigate('/admin/login');

@@ -9,7 +9,7 @@ function MyLearnings() {
     const token = localStorage.getItem('token');
     const fetchCourses = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/users/purchasedCourses', {
+        const response = await axios.get('https://course-selling-app-backend.onrender.com/users/purchasedCourses', {
           headers: {
             Authorization: `Bearer ${token}`,
           },

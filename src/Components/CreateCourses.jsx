@@ -18,7 +18,7 @@ function CreateCourse() {
        e.preventDefault();
        try{
         const token = localStorage.getItem('token');
-        const response=await axios.post('http://localhost:8000/admin/courses',{title,price,description,imageLink,published},
+        const response=await axios.post('https://course-selling-app-backend.onrender.com/admin/courses',{title,price,description,imageLink,published},
         {
 
           headers:{

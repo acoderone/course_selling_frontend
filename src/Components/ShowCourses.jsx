@@ -18,7 +18,7 @@ function ShowCourses() {
 
         const fetchCourses=async()=>{
             try{
-                const response=await axios.get('http://localhost:8000/admin/courses',{
+                const response=await axios.get('https://course-selling-app-backend.onrender.com/admin/courses',{
                     headers:{
                         Authorization:`Bearer ${token}`,
                     },

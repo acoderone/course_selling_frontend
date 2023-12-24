@@ -22,7 +22,7 @@ function Signup() {
   const handleSignup=async(e)=>{
   e.preventDefault();
   try{
-   const response= await axios.post('http://localhost:8000/users/signup',{username,password})
+   const response= await axios.post('https://course-selling-app-backend.onrender.com/users/signup',{username,password})
    if(response.status===200){
     alert("Signup successful");
    
